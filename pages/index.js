@@ -11,8 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-lg text-blue-500">Some header</h1>
-        <p>
+        <h1 className="text-lg text-blue-500">Some header W w</h1>
+        <p className="font-mont">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
           distinctio rem! Similique incidunt distinctio, vero beatae suscipit ab
           error autem delectus ullam unde repellendus quibusdam veritatis, porro
