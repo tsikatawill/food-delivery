@@ -10,6 +10,7 @@
   }
   body {
     scroll-behavior: smooth;
+    @apply bg-slate-800 text-white;
   }
 }
 
