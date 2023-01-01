@@ -24,7 +24,7 @@ export const Hero = () => {
               variants={popUp}
               className="max-w-4xl text-5xl font-[700] leading-[60px] sm:text-6xl sm:leading-[80px]"
             >
-              Why stay hungry when you can order from Bella Onojie .{" "}
+              Why stay hungry when you can order from Bella Onojie?
             </motion.p>
             <motion.p className="text-[24px]" variants={slideY("bottom")}>
               Download the Bella Onojie{"'"}s food app now on
