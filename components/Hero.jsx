@@ -1,6 +1,8 @@
 import { Button, Container } from "../components";
 import { headerTop, popUp, slideY } from "../animations";
 
+import Image from "next/image";
+import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 export const Hero = () => {
@@ -41,9 +43,27 @@ export const Hero = () => {
         </Container>
       </div>
 
-      <Container>
-        <div className="py-10"></div>
-      </Container>
+      <div className="bottom relative h-[600px] w-full bg-white p-10">
+        <div className="images absolute left-1/2 top-1/2 flex h-[500px] -translate-y-1/2 -translate-x-1/2 justify-center sm:-top-10 sm:translate-y-0  md:-top-20 lg:-top-32  ">
+          <Tilt className="left min-w-fit flex-shrink sm:flex-shrink-0">
+            <Image
+              src="/images/phone-left.png"
+              width={300}
+              height={586}
+              alt="left-phone.svg"
+            />
+          </Tilt>
+
+          <Tilt className="right mt-10 min-w-fit flex-shrink sm:flex-shrink-0">
+            <Image
+              src="/images/phone-right.svg"
+              width={300}
+              height={586}
+              alt="right-phone.svg"
+            />
+          </Tilt>
+        </div>
+      </div>
     </section>
   );
 };
