@@ -69,6 +69,7 @@ export const Hero = () => {
                 width={300}
                 height={586}
                 alt="left-phone.svg"
+                className="phone-shadow"
               />
             </Tilt>
           </motion.div>
@@ -89,6 +90,7 @@ export const Hero = () => {
                 width={300}
                 height={586}
                 alt="right-phone.svg"
+                className="phone-shadow"
               />
             </Tilt>
           </motion.div>
