@@ -1,3 +1,5 @@
+import { Download, Hero, HowItWorks } from "../components";
+
 import Head from "next/head";
 
 export default function Home() {
@@ -11,13 +13,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-lg text-blue-500">Some header W w</h1>
-        <p className="font-mont">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-          distinctio rem! Similique incidunt distinctio, vero beatae suscipit ab
-          error autem delectus ullam unde repellendus quibusdam veritatis, porro
-          fugiat quidem. Ut.
-        </p>
+        <Hero />
+        <HowItWorks />
+        <Download />
       </main>
     </>
   );

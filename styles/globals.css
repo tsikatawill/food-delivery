@@ -8,4 +8,21 @@
   html {
     font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+  body {
+    scroll-behavior: smooth;
+    font-size: 24px;
+  }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.phone-shadow {
+  filter: drop-shadow(50px 30px 100px rgba(46, 4, 4, 0.15));
 }
