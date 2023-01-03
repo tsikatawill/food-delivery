@@ -49,28 +49,20 @@ export const click = {
   },
 };
 
-export const slideX = (direction = "left") => {
-  return direction === "right"
-    ? {
-        initial: { translateX: 50, opacity: 0 },
-        animate: { translateX: 0, opacity: 1 },
-      }
-    : {
-        initial: { translateX: -50, opacity: 0 },
-        animate: { translateX: 0, opacity: 1 },
-      };
+export const slideX = (direction = "left", duration = 0.2) => {
+  return {
+    initial: { translateX: direction === "right" ? 50 : -50, opacity: 0 },
+    animate: { translateX: 0, opacity: 1 },
+    duration,
+  };
 };
 
-export const slideY = (direction = "top") => {
-  return direction === "bottom"
-    ? {
-        initial: { translateY: 50, opacity: 0 },
-        animate: { translateY: 0, opacity: 1 },
-      }
-    : {
-        initial: { translateY: -50, opacity: 0 },
-        animate: { translateY: 0, opacity: 1 },
-      };
+export const slideY = (direction = "top", duration = 0.2) => {
+  return {
+    initial: { translateY: direction === "bottom" ? 50 : -50, opacity: 0 },
+    animate: { translateY: 0, opacity: 1 },
+    duration,
+  };
 };
 
 export const headerTop = {
