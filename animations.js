@@ -44,6 +44,9 @@ export const popUp = {
 export const click = {
   initial: { scale: 1 },
   animate: { scale: 0.95 },
+  transition: {
+    duration: 0.05,
+  },
 };
 
 export const slideX = (direction = "left") => {
@@ -76,7 +79,7 @@ export const headerTop = {
     opacity: 1,
     transition: {
       staggerChildren: 0.5,
-      ease: [1, 0.5, 0.71, 1, 1.5],
+      ease: [1, 0.5, 0.71, 1],
     },
   },
 };
