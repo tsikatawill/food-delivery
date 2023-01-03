@@ -21,7 +21,7 @@ export const Button = ({
       variants={click}
       initial="initial"
       whileTap="animate"
-      className={`h-16 min-w-[230px] border border-transparent text-2xl font-bold transition-all duration-150 ${background} ${roundness}`}
+      className={`h-16 min-w-[230px] border border-transparent text-2xl font-bold transition-colors duration-150 ease-in ${background} ${roundness}`}
     >
       {children}
     </motion.button>
