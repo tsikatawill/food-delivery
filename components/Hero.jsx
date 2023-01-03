@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section>
-      <div className="top h-fit py-10 sm:h-[600px] sm:bg-[url(/images/bg-hero.jpg)]">
+      <div className="top h-fit bg-cover bg-no-repeat py-10 text-white sm:h-[600px] sm:bg-[url(/images/bg-hero.jpg)]">
         <Container className="h-full">
           <motion.div
             variants={headerTop}
@@ -43,27 +43,56 @@ export const Hero = () => {
         </Container>
       </div>
 
-      <div className="bottom relative h-[600px] w-full bg-white p-10">
+      <motion.div
+        variants={popUp}
+        initial="initial"
+        animate="animate"
+        className="bottom relative h-[600px] w-full bg-white p-10"
+      >
         <div className="images absolute left-1/2 top-1/2 flex h-[500px] -translate-y-1/2 -translate-x-1/2 justify-center sm:-top-10 sm:translate-y-0  md:-top-20 lg:-top-32  ">
-          <Tilt className="left min-w-fit flex-shrink sm:flex-shrink-0">
-            <Image
-              src="/images/phone-left.png"
-              width={300}
-              height={586}
-              alt="left-phone.svg"
-            />
-          </Tilt>
+          <motion.div
+            initial={{ y: 0 }}
+            whileInView={{ y: [10, 0, 10] }}
+            transition={{
+              delay: 1,
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 1.5,
+            }}
+            className="left min-w-fit flex-shrink sm:flex-shrink-0"
+          >
+            <Tilt>
+              <Image
+                src="/images/phone-left.png"
+                width={300}
+                height={586}
+                alt="left-phone.svg"
+              />
+            </Tilt>
+          </motion.div>
 
-          <Tilt className="right mt-10 min-w-fit flex-shrink sm:flex-shrink-0">
-            <Image
-              src="/images/phone-right.svg"
-              width={300}
-              height={586}
-              alt="right-phone.svg"
-            />
-          </Tilt>
+          <motion.div
+            initial={{ y: 0 }}
+            whileInView={{ y: [10, 0, 10] }}
+            transition={{
+              delay: 1,
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 1.4,
+            }}
+            className="right mt-10 min-w-fit flex-shrink sm:flex-shrink-0"
+          >
+            <Tilt>
+              <Image
+                src="/images/phone-right.svg"
+                width={300}
+                height={586}
+                alt="right-phone.svg"
+              />
+            </Tilt>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
