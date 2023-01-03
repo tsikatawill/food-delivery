@@ -49,6 +49,7 @@ export const Hero = () => {
         variants={popUp}
         initial="initial"
         animate="animate"
+        transition={{ delay: 1.5, ease: [1, 0.5, 0.7, 1] }}
         className="bottom relative h-[600px] w-full bg-white p-10"
       >
         <div className="images absolute left-1/2 top-1/2 flex h-[500px] -translate-y-1/2 -translate-x-1/2 justify-center sm:-top-10 sm:translate-y-0  md:-top-20 lg:-top-32  ">
@@ -56,7 +57,6 @@ export const Hero = () => {
             initial={{ y: 0 }}
             whileInView={{ y: [10, 0, 10] }}
             transition={{
-              delay: 1,
               repeat: Infinity,
               repeatType: "reverse",
               duration: 1.5,
@@ -69,6 +69,7 @@ export const Hero = () => {
                 width={300}
                 height={586}
                 alt="left-phone.svg"
+                className="phone-shadow"
               />
             </Tilt>
           </motion.div>
@@ -77,7 +78,6 @@ export const Hero = () => {
             initial={{ y: 0 }}
             whileInView={{ y: [10, 0, 10] }}
             transition={{
-              delay: 1,
               repeat: Infinity,
               repeatType: "reverse",
               duration: 1.4,
@@ -90,6 +90,7 @@ export const Hero = () => {
                 width={300}
                 height={586}
                 alt="right-phone.svg"
+                className="phone-shadow"
               />
             </Tilt>
           </motion.div>

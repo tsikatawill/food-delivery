@@ -3,6 +3,8 @@ export * from "./Container";
 export * from "./Download";
 export * from "./Footer";
 export * from "./Hero";
+export * from "./HowItWorks";
 export * from "./Layout";
 export * from "./Navbar";
+export * from "./Row";
 export * from "./Sidebar";
