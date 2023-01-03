@@ -5,6 +5,7 @@ export * from "./Footer";
 export * from "./Hero";
 export * from "./HowItWorks";
 export * from "./Layout";
+export * from "./LogoLink";
 export * from "./Navbar";
 export * from "./Row";
 export * from "./Sidebar";

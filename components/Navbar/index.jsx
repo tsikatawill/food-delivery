@@ -1,11 +1,10 @@
-import { AnimatePresence, useCycle } from "framer-motion";
-import { Container, Sidebar } from "..";
+import { Container, LogoLink, Sidebar } from "..";
 
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { NavLink } from "./NavLink";
 import { Routes } from "./routes";
 import { motion } from "framer-motion";
-import { popUp } from "../../animations";
 import { useState } from "react";
 
 export const Navbar = () => {
@@ -13,16 +12,10 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-white text-base shadow-md shadow-[rgba(255,0,0,0.15)] ">
+      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-white text-base shadow-md shadow-[rgba(0,0,0,0.15)] ">
         <Container>
           <div className="flex h-full w-full items-center justify-between py-2">
-            <Image
-              className="h-full w-auto"
-              src="/images/logo.svg"
-              width={206}
-              height={100}
-              alt="logo.svg"
-            />
+            <LogoLink />
 
             <motion.ul className="hidden list-none justify-between gap-10 text-black sm:flex">
               {Routes.map((route, idx) => (
