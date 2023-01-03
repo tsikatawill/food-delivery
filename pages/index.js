@@ -1,4 +1,4 @@
-import { Download, Hero } from "../components";
+import { Download, Hero, HowItWorks } from "../components";
 
 import Head from "next/head";
 
@@ -14,6 +14,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <HowItWorks />
         <Download />
       </main>
     </>
