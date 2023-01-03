@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-slate-900 shadow-md shadow-slate-900">
+      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-white shadow-md shadow-[rgba(255,0,0,0.15)]">
         <Container>
           <div className="flex h-full w-full items-center justify-between py-2">
             <Image
