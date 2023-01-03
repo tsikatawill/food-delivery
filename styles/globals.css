@@ -22,3 +22,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.phone-shadow {
+  filter: drop-shadow(50px 30px 100px rgba(46, 4, 4, 0.15));
+}
