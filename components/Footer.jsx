@@ -34,23 +34,31 @@ export const Footer = () => {
                 />
               </a>
             </Link>
-            <Link href="https://facebook.com" passHref legacyBehavior>
+            <Link
+              href="https://web.facebook.com/profile.php?id=100008541333215"
+              passHref
+              legacyBehavior
+            >
               <a target="_blank" referrerPolicy="noreferrer">
                 <Image
-                  src="/images/twitter.svg"
+                  src="/images/facebook.svg"
                   width={40}
                   height={40}
-                  alt="twitter.svg"
+                  alt="facebook.svg"
                 />
               </a>
             </Link>
-            <Link href="https://facebook.com" passHref legacyBehavior>
+            <Link
+              href="https://www.instagram.com/tsi.ka.ta/"
+              passHref
+              legacyBehavior
+            >
               <a target="_blank" referrerPolicy="noreferrer">
                 <Image
-                  src="/images/twitter.svg"
+                  src="/images/instagram.svg"
                   width={40}
                   height={40}
-                  alt="twitter.svg"
+                  alt="linkedin.svg"
                 />
               </a>
             </Link>
