@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section>
-      <div className="top h-fit bg-cover bg-no-repeat py-10 text-white sm:h-[600px] sm:bg-[url(/images/bg-hero.jpg)]">
+      <div className="top h-fit bg-cover bg-no-repeat py-10 text-black sm:h-[600px] sm:bg-[url(/images/bg-hero.jpg)] sm:text-white">
         <Container className="h-full">
           <motion.div
             variants={headerTop}
@@ -36,8 +36,10 @@ export const Hero = () => {
               className="mt-5 flex flex-col gap-4 sm:flex-row"
               variants={slideY("bottom")}
             >
-              <Button>Playstore</Button>
-              <Button bg="transparent">Appstore</Button>
+              <Button rounded>Play store</Button>
+              <Button rounded bg="transparent">
+                App store
+              </Button>
             </motion.div>
           </motion.div>
         </Container>

@@ -11,13 +11,9 @@ import { useState } from "react";
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const handleSidebarClose = () => {
-    setShowSidebar(false);
-  };
-
   return (
     <>
-      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-white shadow-md shadow-[rgba(255,0,0,0.15)]">
+      <nav className="sticky top-0 z-20 flex h-20 flex-shrink-0 flex-grow-0 items-center bg-white text-base shadow-md shadow-[rgba(255,0,0,0.15)] ">
         <Container>
           <div className="flex h-full w-full items-center justify-between py-2">
             <Image

@@ -8,8 +8,8 @@ export const Routes = [
     path: "/#product",
   },
   {
-    name: "Faq",
-    path: "/#faq",
+    name: "Download",
+    path: "/#download",
   },
   {
     name: "Contact",
